@@ -32,6 +32,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.singlePlayerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,12 +58,12 @@
             this.menuStrip1.Size = new System.Drawing.Size(263, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem,
+            this.singlePlayerToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
@@ -73,17 +74,27 @@
             this.newGameToolStripMenuItem.BackColor = System.Drawing.Color.LightSeaGreen;
             this.newGameToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
-            this.newGameToolStripMenuItem.BackColorChanged += new System.EventHandler(this.LightSeaGreen);
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
+            // 
+            // singlePlayerToolStripMenuItem
+            // 
+            this.singlePlayerToolStripMenuItem.BackColor = System.Drawing.SystemColors.Highlight;
+            this.singlePlayerToolStripMenuItem.CheckOnClick = true;
+            this.singlePlayerToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Menu;
+            this.singlePlayerToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.singlePlayerToolStripMenuItem.Name = "singlePlayerToolStripMenuItem";
+            this.singlePlayerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.singlePlayerToolStripMenuItem.Text = "Single Player";
+            this.singlePlayerToolStripMenuItem.Click += new System.EventHandler(this.singlePlayerToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.BackColor = System.Drawing.Color.LightCoral;
             this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -100,7 +111,7 @@
             this.aboutToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
             this.aboutToolStripMenuItem.ForeColor = System.Drawing.Color.GhostWhite;
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -241,6 +252,7 @@
         private System.Windows.Forms.Button C2;
         private System.Windows.Forms.Button C3;
         private System.Windows.Forms.Button C1;
+        private System.Windows.Forms.ToolStripMenuItem singlePlayerToolStripMenuItem;
     }
 }
 
